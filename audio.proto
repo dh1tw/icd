@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package shackbus.audio;
 
+option go_package = "./sb_audio";
+
 service Server{
     rpc GetCapabilities(None) returns(Capabilities);
     rpc GetState(None) returns(State);
